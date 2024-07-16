@@ -13,5 +13,5 @@ public class User {
     @Getter @Setter private String email;
 
     @OneToMany(mappedBy = "owner", cascade = CascadeType.ALL, fetch= FetchType.LAZY)
-    @Getter @Setter private List<Pet> pets;
+    @Getter @Setter private List<Pet> pets; 
 }
